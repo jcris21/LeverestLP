@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Arco de transformación — AI Leverage Method</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #07080C; }
+a { color: #F08A5D; } a:hover { color: #F6B18E; }
+.dot { opacity: 0; }
+@keyframes dc-flow { 0% { transform: translateX(0); opacity: 0 } 12% { opacity: 1 } 80% { opacity: 1 } 100% { transform: translateX(235px); opacity: 0 } }
+@keyframes dc-spin { to { transform: rotate(360deg) } }
+@keyframes dc-spin-rev { to { transform: rotate(-360deg) } }
+@keyframes dc-breathe { 0%, 100% { opacity: .5; transform: scale(.95) } 50% { opacity: 1; transform: scale(1.05) } }
+@keyframes dc-rise { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: none } }
+@keyframes dc-drift { 0%, 100% { transform: translate(0, 0) } 50% { transform: translate(26px, -20px) } }
+.on .dot { animation: dc-flow 3.6s linear infinite; }
+.on .ring { animation: dc-spin 26s linear infinite; }
+.on .ring-rev { animation: dc-spin-rev 34s linear infinite; }
+.on .halo { animation: dc-breathe 5s ease-in-out infinite; }
+.on .rise { animation: dc-rise .9s cubic-bezier(.2, .7, .2, 1) both; }
+.on .drift { animation: dc-drift 24s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .on .dot, .on .ring, .on .ring-rev, .on .halo, .on .rise, .on .drift { animation: none } }
+</style>
+</helmet>
+<div class="{{motionClass}}" style="min-height: 100%; box-sizing: border-box; padding: 96px 0 104px; position: relative; overflow: hidden; background: #07080C; color: #F4F5F8; font-family: 'Space Grotesk', system-ui, sans-serif">
+<div aria-hidden="true" class="drift" style="position: absolute; left: -200px; top: -160px; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(circle, rgba(240, 138, 93, 0.10), rgba(240, 138, 93, 0) 70%)"></div>
+<div aria-hidden="true" class="drift" style="position: absolute; right: -220px; top: 180px; width: 800px; height: 800px; border-radius: 50%; background: radial-gradient(circle, rgba(95, 211, 196, 0.09), rgba(95, 211, 196, 0) 70%)"></div>
+<div style="position: relative; max-width: 1440px; margin: 0 auto; padding-inline: 80px; box-sizing: border-box">
+<div class="rise" style="display: flex; flex-direction: column; gap: 20px; max-width: 900px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; color: #F08A5D">[ THE AI LEVERAGE METHOD™ ]</span>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.08; letter-spacing: -0.02em; font-weight: 700">De <span style="color: #6E768C">usar IA</span> a diseñar sistemas de trabajo inteligentes</h1>
+<p style="margin: 0; max-width: 700px; font-size: 19px; line-height: 1.55; color: #99A0B2">Dos etapas, un mismo profesional. <b style="font-weight: 500; color: #F08A5D">THINK</b> construye el criterio para decidir qué transformar. <b style="font-weight: 500; color: #5FD3C4">BUILD</b> construye la capacidad de ejecutarlo con Claude y su ecosistema.</p>
+</div>
+<div style="margin-top: 72px; overflow-x: auto">
+<div style="position: relative; width: 1280px; height: 560px">
+<div aria-hidden="true" style="position: absolute; left: 136px; top: 138px; width: 1008px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, rgba(110, 118, 140, 0.22), rgba(240, 138, 93, 0.5), rgba(95, 211, 196, 0.5), rgba(244, 245, 248, 0.6))"></div>
+<div aria-hidden="true" class="halo" style="position: absolute; left: 372px; top: 40px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(240, 138, 93, 0.26), rgba(240, 138, 93, 0) 68%)"></div>
+<div aria-hidden="true" class="halo" style="position: absolute; left: 708px; top: 40px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(95, 211, 196, 0.26), rgba(95, 211, 196, 0) 68%)"></div>
+<div aria-hidden="true" class="halo" style="position: absolute; left: 1044px; top: 40px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(244, 245, 248, 0.22), rgba(244, 245, 248, 0) 68%)"></div>
+<div aria-hidden="true" style="position: absolute; left: 66px; top: 70px; width: 140px; height: 140px; border-radius: 50%; border: 1px dashed rgba(110, 118, 140, 0.3)"></div>
+<div aria-hidden="true" class="ring" style="position: absolute; left: 402px; top: 70px; width: 140px; height: 140px; border-radius: 50%; border: 1px dashed rgba(240, 138, 93, 0.45)"></div>
+<div aria-hidden="true" class="ring" style="position: absolute; left: 738px; top: 70px; width: 140px; height: 140px; border-radius: 50%; border: 1px dashed rgba(95, 211, 196, 0.45)"></div>
+<div aria-hidden="true" class="ring" style="position: absolute; left: 1074px; top: 70px; width: 140px; height: 140px; border-radius: 50%; border: 1px dashed rgba(240, 138, 93, 0.5)"></div>
+<div aria-hidden="true" class="ring-rev" style="position: absolute; left: 1060px; top: 56px; width: 168px; height: 168px; border-radius: 50%; border: 1px dotted rgba(95, 211, 196, 0.45)"></div>
+<svg role="img" aria-label="De AI User a Strategic AI Thinker, durante la etapa THINK" width="239" height="8" viewBox="0 0 239 8" preserveAspectRatio="none" style="position: absolute; left: 184px; top: 136px; width: 239px; height: 8px; overflow: visible; fill: none; stroke: #F08A5D; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><defs><marker id="dc-arrow-head-filled-1" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#F08A5D" stroke="none" style="stroke: none; fill: #F08A5D; fill: context-stroke"></path></marker></defs><path d="M 0 4 L 235 4" marker-end="url(#dc-arrow-head-filled-1)"></path></svg>
+<svg role="img" aria-label="De Strategic AI Thinker a AI Leverage Builder, durante la etapa BUILD" width="239" height="8" viewBox="0 0 239 8" preserveAspectRatio="none" style="position: absolute; left: 520px; top: 136px; width: 239px; height: 8px; overflow: visible; fill: none; stroke: #5FD3C4; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><defs><marker id="dc-arrow-head-filled-2" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#5FD3C4" stroke="none" style="stroke: none; fill: #5FD3C4; fill: context-stroke"></path></marker></defs><path d="M 0 4 L 235 4" marker-end="url(#dc-arrow-head-filled-2)"></path></svg>
+<svg role="img" aria-label="De AI Leverage Builder a AI Leverage Practitioner, el resultado del programa" width="239" height="8" viewBox="0 0 239 8" preserveAspectRatio="none" style="position: absolute; left: 856px; top: 136px; width: 239px; height: 8px; overflow: visible; fill: none; stroke: #E8EAF0; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"><defs><marker id="dc-arrow-head-filled-3" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#E8EAF0" stroke="none" style="stroke: none; fill: #E8EAF0; fill: context-stroke"></path></marker></defs><path d="M 0 4 L 235 4" marker-end="url(#dc-arrow-head-filled-3)"></path></svg>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 184px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F08A5D; box-shadow: 0 0 12px #F08A5D; animation-delay: 0s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 184px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F08A5D; box-shadow: 0 0 12px #F08A5D; animation-delay: 1.2s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 184px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F08A5D; box-shadow: 0 0 12px #F08A5D; animation-delay: 2.4s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 520px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #5FD3C4; box-shadow: 0 0 12px #5FD3C4; animation-delay: .4s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 520px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #5FD3C4; box-shadow: 0 0 12px #5FD3C4; animation-delay: 1.6s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 520px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #5FD3C4; box-shadow: 0 0 12px #5FD3C4; animation-delay: 2.8s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 856px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F4F5F8; box-shadow: 0 0 12px #F4F5F8; animation-delay: .8s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 856px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F4F5F8; box-shadow: 0 0 12px #F4F5F8; animation-delay: 2s"></div>
+<div aria-hidden="true" class="dot" style="position: absolute; left: 856px; top: 138px; width: 5px; height: 5px; border-radius: 50%; background: #F4F5F8; box-shadow: 0 0 12px #F4F5F8; animation-delay: 3.2s"></div>
+<div style="position: absolute; left: 88px; top: 92px; width: 96px; height: 96px; box-sizing: border-box; border-radius: 50%; background: #0D0F16; border: 1px solid #2A2F3E; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: #6E768C">00</div>
+<div style="position: absolute; left: 424px; top: 92px; width: 96px; height: 96px; box-sizing: border-box; border-radius: 50%; background: radial-gradient(circle, rgba(240, 138, 93, 0.2), #0B0D13 72%); border: 2px solid #F08A5D; box-shadow: 0 0 44px rgba(240, 138, 93, 0.35); display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: #F08A5D">01</div>
+<div style="position: absolute; left: 760px; top: 92px; width: 96px; height: 96px; box-sizing: border-box; border-radius: 50%; background: radial-gradient(circle, rgba(95, 211, 196, 0.2), #0B0D13 72%); border: 2px solid #5FD3C4; box-shadow: 0 0 44px rgba(95, 211, 196, 0.32); display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: #5FD3C4">02</div>
+<div style="position: absolute; left: 1096px; top: 92px; width: 96px; height: 96px; box-sizing: border-box; border-radius: 50%; background: radial-gradient(circle, rgba(244, 245, 248, 0.16), #0B0D13 72%); border: 2px solid #F4F5F8; box-shadow: 0 0 56px rgba(244, 245, 248, 0.28); display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: #F4F5F8">03</div>
+<div style="position: absolute; left: 204px; top: 112px; width: 200px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; letter-spacing: .06em; color: #8A93A8">ETAPA 1 · THINK · 8 MÓD.</div>
+<div style="position: absolute; left: 535px; top: 112px; width: 210px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; letter-spacing: .06em; color: #8A93A8">ETAPA 2 · BUILD · 11 MÓD.</div>
+<div style="position: absolute; left: 921px; top: 112px; width: 110px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 16px; letter-spacing: .06em; color: #8A93A8">RESULTADO</div>
+<div class="rise" style="position: absolute; left: 0px; top: 240px; width: 272px; height: 280px; box-sizing: border-box; padding: 24px; background: #0C0E14; border: 1px dashed #262B3A; border-radius: 16px; display: flex; align-items: flex-start; animation-delay: .15s"><span style="display: block"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .1em; color: #7E879C">[ 00 · HOY ]</span><b style="display: block; margin-top: 12px; font-size: 20px; line-height: 26px; font-weight: 700; color: #C7CCD9">AI User</b><span style="display: block; margin-top: 12px; font-size: 14px; line-height: 20px; color: #99A0B2">Usa herramientas de IA para resolver tareas sueltas. No sabe cómo integrarlas ni transformar su trabajo.</span><span style="display: block; margin-top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #7E879C">— aún sin método</span></span></div>
+<div class="rise" style="position: absolute; left: 336px; top: 240px; width: 272px; height: 280px; box-sizing: border-box; padding: 24px; background: #10121A; border: 1px solid #2E2A2C; border-radius: 16px; display: flex; align-items: flex-start; animation-delay: .3s"><span style="display: block"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .1em; color: #F08A5D">[ 01 · ETAPA THINK ]</span><b style="display: block; margin-top: 12px; font-size: 20px; line-height: 26px; font-weight: 700">Strategic AI Thinker</b><span style="display: block; margin-top: 12px; font-size: 14px; line-height: 20px; color: #99A0B2">Identifica oportunidades, diagnostica fricciones y decide qué aumentar, conectar, automatizar o delegar.</span><span style="display: block; margin-top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #F08A5D">→ AI Leverage Plan™</span></span></div>
+<div class="rise" style="position: absolute; left: 672px; top: 240px; width: 272px; height: 280px; box-sizing: border-box; padding: 24px; background: #10121A; border: 1px solid #243230; border-radius: 16px; display: flex; align-items: flex-start; animation-delay: .45s"><span style="display: block"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .1em; color: #5FD3C4">[ 02 · ETAPA BUILD ]</span><b style="display: block; margin-top: 12px; font-size: 20px; line-height: 26px; font-weight: 700">AI Leverage Builder</b><span style="display: block; margin-top: 12px; font-size: 14px; line-height: 20px; color: #99A0B2">Construye con Claude: artifacts, proyectos, conectores MCP, skills y delegación de tareas reales.</span><span style="display: block; margin-top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #5FD3C4">→ Soluciones funcionando</span></span></div>
+<div class="rise" style="position: absolute; left: 1008px; top: 240px; width: 272px; height: 280px; box-sizing: border-box; padding: 24px; background: #12151F; border: 1px solid #3B445C; border-radius: 16px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45); display: flex; align-items: flex-start; animation-delay: .6s"><span style="display: block"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .1em; color: #C7CCD9">[ 03 · RESULTADO ]</span><b style="display: block; margin-top: 12px; font-size: 20px; line-height: 26px; font-weight: 700">AI Leverage Practitioner</b><span style="display: block; margin-top: 12px; font-size: 14px; line-height: 20px; color: #B6BCCB">Decide qué transformar, cómo hacerlo y construye el sistema de trabajo que lo ejecuta.</span><span style="display: block; margin-top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .06em; color: #F4F5F8">→ Sistemas de trabajo inteligentes</span></span></div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 64px">
+<a href="#programa" style="display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #F08A5D; color: #07080C; font-size: 16px; font-weight: 500; text-decoration: none">Ver el programa completo</a>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .08em; color: #8A93A8">2 etapas · 19 módulos · THINK + BUILD</span>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"motion":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":1100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { motionClass: this.props.motion === false ? '' : 'on' };
+  }
+}
+</script>
+</body>
+</html>

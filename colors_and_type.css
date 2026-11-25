@@ -1,0 +1,287 @@
+/* =========================================================
+   Creanovas Design System — Colors & Type
+   ========================================================= */
+
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---------- Brand Core Palette ----------
+     Sampled from the Creanovas brand board: a vibrant magenta→
+     purple→blue→teal gradient over a deep navy field.            */
+
+  --cn-magenta:   #FF2E93;   /* Hot pink primary accent          */
+  --cn-pink:      #E83A8C;   /* Wordmark "C" tone                */
+  --cn-fuchsia:   #C23DC1;   /* Gradient mid-warm                */
+  --cn-purple:    #8A3FD1;   /* Gradient mid                     */
+  --cn-violet:    #6A4AE0;   /* Gradient mid-cool                */
+  --cn-indigo:    #4558E8;   /* Blue-violet                      */
+  --cn-blue:      #3A7BE0;   /* Gradient cool                    */
+  --cn-cyan:      #35C9D8;   /* Teal highlight                   */
+  --cn-teal:      #2DD4BF;   /* Secondary teal                   */
+
+  /* ---------- Neutrals ---------- */
+  --cn-navy-950:  #0A0E2E;   /* Deepest background               */
+  --cn-navy-900:  #0E1339;   /* Primary dark bg                  */
+  --cn-navy-800:  #141A47;   /* Surface on dark                  */
+  --cn-navy-700:  #1D2560;   /* Raised surface                   */
+  --cn-navy-600:  #2A3378;   /* Borders on dark                  */
+
+  --cn-ink-900:   #0A0E2E;   /* Primary text on light            */
+  --cn-ink-700:   #2A2F5A;
+  --cn-ink-500:   #6B6F93;
+  --cn-ink-300:   #A8ABC4;
+  --cn-ink-100:   #E4E5EF;
+
+  --cn-paper-50:  #FAFAFC;   /* App background light mode        */
+  --cn-paper-100: #F3F1F8;   /* Secondary light surface          */
+  --cn-paper-200: #E8E4F0;   /* Muted lavender wash              */
+  --cn-paper-0:   #FFFFFF;
+
+  /* ---------- Semantic (on light) ---------- */
+  --fg-1:         var(--cn-ink-900);  /* Primary text             */
+  --fg-2:         var(--cn-ink-700);  /* Secondary text           */
+  --fg-3:         var(--cn-ink-500);  /* Tertiary / meta          */
+  --fg-inverse:   var(--cn-paper-0);
+
+  --bg-1:         var(--cn-paper-0);  /* Primary surface          */
+  --bg-2:         var(--cn-paper-50); /* App bg                   */
+  --bg-3:         var(--cn-paper-100);/* Card bg                  */
+  --bg-inverse:   var(--cn-navy-900);
+
+  --border-1:     var(--cn-paper-200);
+  --border-2:     #D5D0E2;
+  --border-focus: var(--cn-purple);
+
+  --accent:       var(--cn-magenta);
+  --accent-hover: var(--cn-fuchsia);
+  --link:         var(--cn-violet);
+
+  --success:      #1FB26A;
+  --warning:      #F5A524;
+  --danger:       #EF4444;
+  --info:         var(--cn-cyan);
+
+  /* ---------- Signature Gradients ---------- */
+  --cn-gradient-brand:
+    linear-gradient(90deg,
+      var(--cn-magenta) 0%,
+      var(--cn-fuchsia) 28%,
+      var(--cn-purple) 52%,
+      var(--cn-indigo) 74%,
+      var(--cn-cyan) 100%);
+
+  --cn-gradient-brand-diag:
+    linear-gradient(135deg,
+      var(--cn-magenta) 0%,
+      var(--cn-purple) 50%,
+      var(--cn-cyan) 100%);
+
+  --cn-gradient-warm:
+    linear-gradient(90deg, var(--cn-magenta), var(--cn-purple));
+
+  --cn-gradient-cool:
+    linear-gradient(90deg, var(--cn-purple), var(--cn-cyan));
+
+  --cn-gradient-night:
+    radial-gradient(ellipse at 20% 20%, #1A1F5E 0%, var(--cn-navy-900) 45%, var(--cn-navy-950) 100%);
+
+  --cn-gradient-aurora: /* soft ambient blobs backdrop */
+    radial-gradient(circle at 15% 20%, rgba(255,46,147,0.35), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(53,201,216,0.30), transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(138,63,209,0.35), transparent 50%),
+    var(--cn-navy-900);
+
+  /* ---------- Type: families ---------- */
+  --font-display: 'Nunito', 'Quicksand', system-ui, -apple-system, sans-serif;
+  --font-sans:    'Poppins', 'Nunito Sans', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+
+  /* ---------- Type: scale ---------- */
+  --fs-display-1: 88px;
+  --fs-display-2: 64px;
+  --fs-h1:        48px;
+  --fs-h2:        36px;
+  --fs-h3:        28px;
+  --fs-h4:        22px;
+  --fs-h5:        18px;
+  --fs-lead:      20px;
+  --fs-body:      16px;
+  --fs-small:     14px;
+  --fs-caption:   12px;
+
+  /* ---------- Type: weights ---------- */
+  --fw-light:     300;
+  --fw-regular:   400;
+  --fw-medium:    500;
+  --fw-semibold:  600;
+  --fw-bold:      700;
+  --fw-extrabold: 800;
+  --fw-black:     900;
+
+  /* ---------- Line heights ---------- */
+  --lh-tight:     1.05;
+  --lh-snug:      1.2;
+  --lh-normal:    1.45;
+  --lh-relaxed:   1.6;
+
+  /* ---------- Letter-spacing ---------- */
+  --ls-tight:     -0.02em;
+  --ls-normal:    0;
+  --ls-wide:      0.04em;
+  --ls-caps:      0.08em;
+
+  /* ---------- Radii ---------- */
+  --r-xs:         6px;
+  --r-sm:         10px;
+  --r-md:         14px;
+  --r-lg:         20px;
+  --r-xl:         28px;
+  --r-2xl:        40px;
+  --r-pill:       9999px;
+
+  /* ---------- Spacing scale (8pt + half-steps) ---------- */
+  --sp-0:  0px;
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  /* ---------- Shadows ---------- */
+  --sh-xs:  0 1px 2px rgba(10,14,46,0.06);
+  --sh-sm:  0 2px 6px rgba(10,14,46,0.08);
+  --sh-md:  0 8px 20px rgba(10,14,46,0.10);
+  --sh-lg:  0 18px 40px rgba(10,14,46,0.14);
+  --sh-xl:  0 30px 60px rgba(10,14,46,0.18);
+  --sh-glow-pink:   0 0 40px rgba(255,46,147,0.45);
+  --sh-glow-purple: 0 0 50px rgba(138,63,209,0.50);
+  --sh-glow-cyan:   0 0 40px rgba(53,201,216,0.45);
+
+  /* ---------- Motion ---------- */
+  --ease-out-soft:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out:     cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-bounce:     cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:        140ms;
+  --dur-base:        240ms;
+  --dur-slow:        420ms;
+}
+
+/* =========================================================
+   Semantic element styles
+   ========================================================= */
+
+.cn-display-1,
+.cn-display-2,
+.cn-h1, .cn-h2, .cn-h3, .cn-h4, .cn-h5 {
+  font-family: var(--font-display);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+.cn-display-1 {
+  font-size: var(--fs-display-1);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+.cn-display-2 {
+  font-size: var(--fs-display-2);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+.cn-h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-extrabold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+}
+.cn-h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+}
+.cn-h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+}
+.cn-h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+}
+.cn-h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
+}
+
+.cn-lead {
+  font-family: var(--font-sans);
+  font-size: var(--fs-lead);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+.cn-body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-1);
+}
+.cn-small {
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+}
+.cn-caption {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-normal);
+  color: var(--fg-3);
+  letter-spacing: var(--ls-wide);
+}
+.cn-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  color: var(--cn-purple);
+}
+.cn-mono {
+  font-family: var(--font-mono);
+  font-size: calc(var(--fs-body) - 1px);
+}
+
+/* Gradient text — the defining Creanovas type treatment. */
+.cn-text-gradient {
+  background: var(--cn-gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.cn-text-gradient-warm {
+  background: var(--cn-gradient-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.cn-text-gradient-cool {
+  background: var(--cn-gradient-cool);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

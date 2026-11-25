@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#f0eee9}</style>
+</helmet>
+
+<section style="padding:40px 44px 60px;font-family:'Patrick Hand',cursive">
+  <div style="display:flex;align-items:baseline;gap:10px;margin:0 0 20px">
+    <a href="#t1" style="font:600 11px ui-monospace,monospace;padding:3px 8px;background:#111;color:#fff;border-radius:4px;text-decoration:none">1</a>
+    <span style="font:16px 'Patrick Hand',cursive;color:#111">AI Leverage — wireframes de baja fidelidad (Hero + Identificación)</span>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start">
+
+    <!-- OPTION 1a: stacked, per spec layout -->
+    <div id="1a" style="display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px">
+      <div style="display:flex;align-items:baseline;gap:8px;font:16px 'Patrick Hand',cursive;color:rgba(0,0,0,.6)">
+        <a href="#1a" style="font:600 12px ui-monospace,monospace;padding:3px 8px;background:rgba(0,0,0,.08);color:#111;border-radius:5px;text-decoration:none">1a</a>
+        Todo apilado (fiel al boceto)
+      </div>
+      <div style="width:860px;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden">
+
+        <!-- NAV -->
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:2px dashed #111">
+          <div style="font-size:20px;color:#111">AI LEVERAGE</div>
+          <div style="display:flex;align-items:center;gap:24px">
+            <span style="font-size:16px;color:#333">Cómo funciona</span>
+            <span style="font-size:15px;border:2px solid #111;padding:6px 16px;border-radius:20px;color:#111">EMPEZAR</span>
+          </div>
+        </div>
+
+        <!-- HERO -->
+        <div style="padding:48px 40px 56px;border-bottom:2px dashed #111">
+          <div style="font-size:13px;letter-spacing:2px;color:#999;text-align:center;margin-bottom:18px">01 · HERO</div>
+          <div style="text-align:center;font-size:32px;line-height:1.25;color:#111;max-width:640px;margin:0 auto">Deja de usar la IA como un chatbot. Empieza a delegarle trabajo.</div>
+          <div style="text-align:center;font-size:17px;color:#555;max-width:520px;margin:20px auto 0">Convierte las tareas repetitivas de tu trabajo o negocio en workflows que ChatGPT, Claude, Gemini, Perplexity, Notion AI y n8n pueden ejecutar por ti.</div>
+          <div style="display:flex;justify-content:center;margin:28px 0 16px">
+            <span style="font-size:18px;border:2px solid #111;background:#eaff9e;padding:12px 28px;border-radius:24px;color:#111">Construir mi primer workflow →</span>
+          </div>
+          <div style="display:flex;justify-content:center;gap:24px;font-size:14px;color:#555">
+            <span>✓ Sin programación</span><span>✓ Primera automatización en 30 min</span><span>✓ Acceso inmediato</span>
+          </div>
+
+          <div style="margin:36px auto 0;width:600px;border:2px dashed #111;border-radius:8px;padding:24px">
+            <div style="text-align:center;font-size:14px;color:#888;margin-bottom:18px">[ AI WORKFLOW MOCKUP ]</div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:10px;font-size:14px;color:#111;flex-wrap:wrap">
+              <span style="border:1.5px solid #111;padding:6px 12px;border-radius:6px">EMAIL</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:6px 12px;border-radius:6px;background:#dce6ff">AI</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:6px 12px;border-radius:6px">DECIDE</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:6px 12px;border-radius:6px">NOTION</span>
+            </div>
+            <div style="display:flex;justify-content:flex-end;width:60%;margin:6px auto 0">
+              <span style="font-size:13px;color:#888">↓</span>
+            </div>
+            <div style="display:flex;justify-content:center;margin-top:2px">
+              <span style="border:1.5px solid #111;padding:6px 12px;border-radius:6px;font-size:14px">CRM</span>
+            </div>
+            <div style="text-align:center;margin-top:18px;font-size:15px;color:#111">2h 47m &nbsp;→&nbsp; <b>18 min</b></div>
+          </div>
+        </div>
+
+        <!-- IDENTIFICACION -->
+        <div style="padding:48px 40px 44px">
+          <div style="font-size:13px;letter-spacing:2px;color:#999;text-align:center;margin-bottom:8px">02 · IDENTIFICACIÓN</div>
+          <div style="text-align:center;font-size:26px;color:#111;margin-bottom:28px">¿Esto te resulta familiar?</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:720px;margin:0 auto">
+            <div style="border:2px dashed #111;border-radius:6px;padding:16px">
+              <div style="width:28px;height:28px;border:1.5px solid #111;border-radius:4px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#888">icn</div>
+              <div style="font-size:15px;color:#111;margin-bottom:6px">Profesional</div>
+              <div style="font-size:13px;color:#666;line-height:1.4">Haces las mismas tareas repetitivas cada semana.</div>
+            </div>
+            <div style="border:2px dashed #111;border-radius:6px;padding:16px">
+              <div style="width:28px;height:28px;border:1.5px solid #111;border-radius:4px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#888">icn</div>
+              <div style="font-size:15px;color:#111;margin-bottom:6px">Operador</div>
+              <div style="font-size:13px;color:#666;line-height:1.4">Copias información entre herramientas constantemente.</div>
+            </div>
+            <div style="border:2px dashed #111;border-radius:6px;padding:16px">
+              <div style="width:28px;height:28px;border:1.5px solid #111;border-radius:4px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#888">icn</div>
+              <div style="font-size:15px;color:#111;margin-bottom:6px">Empresario</div>
+              <div style="font-size:13px;color:#666;line-height:1.4">Todo depende de ti para avanzar.</div>
+            </div>
+            <div style="grid-column:1 / span 1;border:2px dashed #111;border-radius:6px;padding:16px;justify-self:end;width:100%">
+              <div style="width:28px;height:28px;border:1.5px solid #111;border-radius:4px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#888">icn</div>
+              <div style="font-size:15px;color:#111;margin-bottom:6px">Poco tiempo</div>
+              <div style="font-size:13px;color:#666;line-height:1.4">Sabes que podrías hacer más, pero no tienes tiempo.</div>
+            </div>
+            <div style="border:2px dashed #111;border-radius:6px;padding:16px">
+              <div style="width:28px;height:28px;border:1.5px solid #111;border-radius:4px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#888">icn</div>
+              <div style="font-size:15px;color:#111;margin-bottom:6px">Ya usas IA</div>
+              <div style="font-size:13px;color:#666;line-height:1.4">Usas ChatGPT pero todavía haces mucho manualmente.</div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:28px;font-size:16px;color:#111">Si te identificas → esto es para ti</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 1b: hero split two-column, cards in single row -->
+    <div id="1b" style="display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px">
+      <div style="display:flex;align-items:baseline;gap:8px;font:16px 'Patrick Hand',cursive;color:rgba(0,0,0,.6)">
+        <a href="#1b" style="font:600 12px ui-monospace,monospace;padding:3px 8px;background:rgba(0,0,0,.08);color:#111;border-radius:5px;text-decoration:none">1b</a>
+        Hero partido, tarjetas en fila
+      </div>
+      <div style="width:860px;background:#fff;border:1px solid rgba(0,0,0,.1);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden">
+
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:2px dashed #111">
+          <div style="font-size:20px;color:#111">AI LEVERAGE</div>
+          <div style="display:flex;align-items:center;gap:24px">
+            <span style="font-size:16px;color:#333">Cómo funciona</span>
+            <span style="font-size:15px;border:2px solid #111;padding:6px 16px;border-radius:20px;color:#111">EMPEZAR</span>
+          </div>
+        </div>
+
+        <div style="padding:48px 40px 56px;border-bottom:2px dashed #111;display:flex;gap:32px;align-items:center">
+          <div style="flex:1">
+            <div style="font-size:13px;letter-spacing:2px;color:#999;margin-bottom:14px">01 · HERO</div>
+            <div style="font-size:28px;line-height:1.25;color:#111">Deja de usar la IA como un chatbot. Empieza a delegarle trabajo.</div>
+            <div style="font-size:15px;color:#555;margin:16px 0 22px">Convierte tareas repetitivas en workflows que ChatGPT, Claude, Gemini, Perplexity, Notion AI y n8n ejecutan por ti.</div>
+            <span style="display:inline-block;font-size:16px;border:2px solid #111;background:#eaff9e;padding:10px 22px;border-radius:24px;color:#111">Construir mi primer workflow →</span>
+            <div style="display:flex;flex-direction:column;gap:4px;margin-top:18px;font-size:13px;color:#555">
+              <span>✓ Sin programación</span><span>✓ Primera automatización en 30 min</span><span>✓ Acceso inmediato</span>
+            </div>
+          </div>
+          <div style="flex:1;border:2px dashed #111;border-radius:8px;padding:20px">
+            <div style="text-align:center;font-size:13px;color:#888;margin-bottom:14px">[ AI WORKFLOW MOCKUP ]</div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#111;flex-wrap:wrap">
+              <span style="border:1.5px solid #111;padding:5px 9px;border-radius:6px">EMAIL</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:5px 9px;border-radius:6px;background:#dce6ff">AI</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:5px 9px;border-radius:6px">DECIDE</span><span>→</span>
+              <span style="border:1.5px solid #111;padding:5px 9px;border-radius:6px">NOTION</span>
+            </div>
+            <div style="display:flex;justify-content:center;margin-top:10px">
+              <span style="border:1.5px solid #111;padding:5px 9px;border-radius:6px;font-size:12px">CRM</span>
+            </div>
+            <div style="text-align:center;margin-top:14px;font-size:14px;color:#111">2h 47m → <b>18 min</b></div>
+          </div>
+        </div>
+
+        <div style="padding:48px 40px 44px">
+          <div style="font-size:13px;letter-spacing:2px;color:#999;text-align:center;margin-bottom:8px">02 · IDENTIFICACIÓN</div>
+          <div style="text-align:center;font-size:24px;color:#111;margin-bottom:26px">¿Esto te resulta familiar?</div>
+          <div style="display:flex;gap:12px">
+            <div style="flex:1;border:2px dashed #111;border-radius:6px;padding:14px">
+              <div style="font-size:14px;color:#111;margin-bottom:6px">Profesional</div>
+              <div style="font-size:12px;color:#666;line-height:1.35">Tareas repetitivas cada semana.</div>
+            </div>
+            <div style="flex:1;border:2px dashed #111;border-radius:6px;padding:14px">
+              <div style="font-size:14px;color:#111;margin-bottom:6px">Operador</div>
+              <div style="font-size:12px;color:#666;line-height:1.35">Copia info entre herramientas.</div>
+            </div>
+            <div style="flex:1;border:2px dashed #111;border-radius:6px;padding:14px">
+              <div style="font-size:14px;color:#111;margin-bottom:6px">Empresario</div>
+              <div style="font-size:12px;color:#666;line-height:1.35">Todo depende de ti.</div>
+            </div>
+            <div style="flex:1;border:2px dashed #111;border-radius:6px;padding:14px">
+              <div style="font-size:14px;color:#111;margin-bottom:6px">Poco tiempo</div>
+              <div style="font-size:12px;color:#666;line-height:1.35">Podrías hacer más, no hay tiempo.</div>
+            </div>
+            <div style="flex:1;border:2px dashed #111;border-radius:6px;padding:14px">
+              <div style="font-size:14px;color:#111;margin-bottom:6px">Ya usas IA</div>
+              <div style="font-size:12px;color:#666;line-height:1.35">Usas ChatGPT, aún manual.</div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:26px;font-size:15px;color:#111">Si te identificas → esto es para ti</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin:22px 0 0;font-size:15px;color:rgba(0,0,0,.55)">Siguiente: "sigue con <a href="#1a" style="font:600 12px ui-monospace,monospace;padding:2px 6px;background:rgba(0,0,0,.08);color:#111;border-radius:4px;text-decoration:none">1a</a>, añade la sección de mecanismo (Find→Augment→Connect→Automate→Delegate)" · "combina el hero de <a href="#1b" style="font:600 12px ui-monospace,monospace;padding:2px 6px;background:rgba(0,0,0,.08);color:#111;border-radius:4px;text-decoration:none">1b</a> con las tarjetas de <a href="#1a" style="font:600 12px ui-monospace,monospace;padding:2px 6px;background:rgba(0,0,0,.08);color:#111;border-radius:4px;text-decoration:none">1a</a>" · "muéstrame más secciones del funnel"</div>
+</section>
+
+</x-dc>
+</body>
+</html>
