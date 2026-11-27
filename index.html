@@ -992,7 +992,10 @@
         <span style="font-family:var(--font-sans);font-size:var(--fs-caption);font-weight:var(--fw-bold);text-transform:uppercase;letter-spacing:var(--ls-caps);color:#F2C14E">TU VIAJE DE APRENDIZAJE</span>
         <h2 style="font-family:var(--font-display);font-weight:var(--fw-black);font-size:clamp(28px,4.4vw,var(--fs-h1));line-height:var(--lh-tight);color:#fff;margin:0;text-wrap:balance">Despierta real capacidad de IA</h2>
         <p style="font-family:var(--font-sans);font-size:var(--fs-lead);line-height:var(--lh-relaxed);color:var(--cn-ink-300);margin:0;text-wrap:pretty">Primero aprende a pensar en sistemas. Después aprende a construirlos y delegar trabajo con Claude.</p>
-        <a href="#cur-modules" style="display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:12px 22px;border-radius:var(--r-pill);border:1px solid rgba(255,255,255,0.14);color:#fff;font-weight:var(--fw-semibold);font-size:14px;transition:border-color var(--dur-fast) var(--ease-out-soft), color var(--dur-fast) var(--ease-out-soft)" style-hover="border-color:#F2C14E;color:#F2C14E">Explora los 10 modulos ↓</a>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px">
+          <a href="#cur-modules" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:var(--r-pill);border:1px solid rgba(255,255,255,0.14);color:#fff;font-weight:var(--fw-semibold);font-size:14px;transition:border-color var(--dur-fast) var(--ease-out-soft), color var(--dur-fast) var(--ease-out-soft)" style-hover="border-color:#F2C14E;color:#F2C14E">Explora los 10 modulos ↓</a>
+          <button onClick="{{ openFreeModal }}" style="display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:var(--r-pill);border:0;background:#B8FF3D;color:#0B0D0F;font-weight:var(--fw-extrabold);font-size:14px;cursor:pointer;transition:transform var(--dur-fast) var(--ease-out-soft)" style-hover="transform:scale(1.04)"><i data-lucide="play-circle" style="width:16px;height:16px"></i>Ver lecciones gratis</button>
+        </div>
       </div>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px 20px;margin-top:40px;font-size:12px;color:var(--cn-ink-300)">
         <span style="display:inline-flex;align-items:center;gap:6px"><i data-lucide="play-circle" style="width:14px;height:14px"></i>Video</span>
@@ -1295,6 +1298,7 @@
           </div>
           <div style="flex:1;min-width:280px">
             <div style="font-family:var(--font-display);font-weight:var(--fw-extrabold);font-size:var(--fs-h3);color:var(--fg-1)">Christian Cobián</div>
+            <div style="margin-top:10px"><img src="./assets/claude-certified-badge.png" alt="Certificado como: Claude Certified Architect" style="height:110px;width:auto;display:block"></div>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:16px 0 0">Profesional licenciado en Gestión Empresarial con experiencia en proyectos de transformación digital corporativa.</p>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:14px 0 0">Ha liderado automatizaciones y desarrollo de productos y procesos con IA en startups de crecimiento exponencial y AI agencies.</p>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:14px 0 0">Ex-docente PUCP en proyectos ágiles.</p>
@@ -1313,6 +1317,7 @@
           </div>
           <div style="flex:1;min-width:280px">
             <div style="font-family:var(--font-display);font-weight:var(--fw-extrabold);font-size:var(--fs-h3);color:var(--fg-1)">Santiago Hernández</div>
+            <div style="margin-top:10px"><img src="./assets/claude-certified-badge.png" alt="Certificado como: Claude Certified Architect" style="height:110px;width:auto;display:block"></div>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:16px 0 0">Experto en Inteligencia Artificial y Ciberseguridad. Santiago Hernández es ingeniero informático por la Universidad de Salamanca, con un máster en seguridad de la información y de las comunicaciones por la Universidad Europea y especialización en Deep Learning e Inteligencia Artificial por la universidad de Standford.</p>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:14px 0 0">Su experiencia profesional abarca diferentes posiciones en el ámbito de la Ciberseguridad y de la Inteligencia Artificial en compañías como Endesa, Telefónica/11paths o BBVA.</p>
             <p style="font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-relaxed);color:var(--fg-2);margin:14px 0 0">Además, es profesor universitario en la UEM, en la UCLM y UCAM en diferentes postgrados relacionados con la Inteligencia Artificial y la seguridad de la información y ponente habitual en conferencias especializadas.</p>
@@ -1655,6 +1660,51 @@
   <sc-if value="{{ floatingMaxed }}" hint-placeholder-val="{{ false }}">
     <div onClick="{{ toggleFloatingMax }}" style="position:fixed;inset:0;z-index:55;background:rgba(5,6,8,0.75);backdrop-filter:blur(2px)"></div>
   </sc-if>
+  <sc-if value="{{ freeModalOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeFreeModal }}" style="position:fixed;inset:0;z-index:70;background:rgba(5,6,8,0.8);backdrop-filter:blur(3px)"></div>
+    <div style="position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:71;width:min(920px,calc(100vw - 32px));max-height:calc(100vh - 48px);background:#0B0D0F;border:1px solid rgba(255,255,255,0.08);border-radius:var(--r-lg);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,0.6);display:flex;flex-direction:column">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:rgba(255,255,255,0.04)">
+        <span style="font-family:var(--font-display);font-weight:var(--fw-extrabold);font-size:16px;color:#fff">Lecciones gratis</span>
+        <button onClick="{{ closeFreeModal }}" aria-label="Cerrar" style="display:flex;align-items:center;justify-content:center;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,0.08);color:#fff;cursor:pointer"><i data-lucide="x" style="width:16px;height:16px"></i></button>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ freeModalCols }};min-height:0;flex:1">
+        <div style="border-right:1px solid rgba(255,255,255,0.08);overflow-y:auto;max-height:min(70vh,560px)">
+          <sc-for list="{{ freeLessons }}" as="fl" hint-placeholder-count="2">
+            <button onClick="{{ fl.select }}" style="display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:16px 18px;border:0;border-bottom:1px solid rgba(255,255,255,0.06);background:{{ fl.bg }};cursor:pointer;transition:background var(--dur-fast) var(--ease-out-soft)" style-hover="background:rgba(255,255,255,0.05)">
+              <span style="flex:none;display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:{{ fl.iconBg }};color:{{ fl.iconColor }}"><i data-lucide="{{ fl.icon }}" style="width:15px;height:15px"></i></span>
+              <span style="min-width:0;display:flex;flex-direction:column;gap:3px">
+                <span style="font-family:var(--font-sans);font-size:14px;font-weight:var(--fw-semibold);color:#fff;text-wrap:pretty">{{ fl.title }}</span>
+                <span style="font-family:var(--font-mono);font-size:12px;color:var(--cn-ink-300)">{{ fl.duration }}</span>
+              </span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="position:relative;background:#000;display:flex;align-items:center;justify-content:center">
+          <sc-if value="{{ freeUnlocked }}" hint-placeholder-val="{{ false }}">
+            <div style="position:relative;width:100%;aspect-ratio:16/9">
+              <iframe src="{{ freeActiveVideo }}" title="{{ freeActiveTitle }}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+            </div>
+          </sc-if>
+          <sc-if value="{{ freeLocked }}" hint-placeholder-val="{{ true }}">
+            <div style="position:relative;width:100%;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden">
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(184,255,61,0.12),transparent 60%),#0B0D0F"></div>
+              <i data-lucide="lock" style="width:34px;height:34px;color:var(--cn-ink-300);opacity:0.5"></i>
+            </div>
+          </sc-if>
+          <sc-if value="{{ freeLocked }}" hint-placeholder-val="{{ true }}">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;background:rgba(11,13,15,0.78);backdrop-filter:blur(4px);text-align:center">
+              <span style="font-family:var(--font-display);font-weight:var(--fw-extrabold);font-size:18px;color:#fff">Desbloquea estas lecciones gratis</span>
+              <span style="font-family:var(--font-sans);font-size:13px;color:var(--cn-ink-300);max-width:320px">Déjanos tu correo para ver las clases completas sin costo.</span>
+              <form onSubmit="{{ submitFreeEmail }}" style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px">
+                <input type="email" required="true" placeholder="tu@email.com" value="{{ freeEmailValue }}" onChange="{{ onFreeEmailChange }}" style="width:100%;padding:11px 14px;border-radius:var(--r-md);border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.06);color:#fff;font-family:var(--font-sans);font-size:14px"></input>
+                <button type="submit" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:var(--r-pill);border:0;background:#B8FF3D;color:#0B0D0F;font-weight:var(--fw-extrabold);font-size:14px;cursor:pointer">Ver lecciones gratis</button>
+              </form>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </sc-if>
   <sc-if value="{{ floatingVideoMin }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed;right:20px;bottom:20px;z-index:50;width:min(360px,calc(100vw - 40px));background:#0B0D0F;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.1)">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,255,255,0.04)">
@@ -1724,7 +1774,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { floatingVideo: null, floatingTitle: '', floatingMaxed: false, persona: 'profesional', showSticky: false, active: 1, reached: 0, compact: false, curOpen: 'm01', curNarrow: false, curDesc: {}, vslPlaying: false, ecoSel: null, ecoNarrow: false, tjStage: 'think', tjCap: {}, tjNarrow: false };
+  state = { freeModalOpen: false, freeUnlocked: false, freeEmailValue: '', freeActiveIdx: 0, freeNarrow: false, floatingVideo: null, floatingTitle: '', floatingMaxed: false, persona: 'profesional', showSticky: false, active: 1, reached: 0, compact: false, curOpen: 'm01', curNarrow: false, curDesc: {}, vslPlaying: false, ecoSel: null, ecoNarrow: false, tjStage: 'think', tjCap: {}, tjNarrow: false };
   sceneRef = React.createRef();
   CPS = [
     { n:'01', t:'FIND', d:'Identify tasks and opportunities.', x:18.75, y:84.375, f:0.34, side:'r' },
@@ -2071,6 +2121,10 @@ class Component extends DCLogic {
   }
   componentDidMount() {
     setTimeout(() => window.lucide && window.lucide.createIcons(), 0);
+    this._onFreeResize = () => { const n = window.innerWidth < 640; if (n !== this.state.freeNarrow) this.setState({ freeNarrow: n }); };
+    window.addEventListener('resize', this._onFreeResize, { passive: true });
+    this._onFreeResize();
+    try { this._freeUnlocked = localStorage.getItem('aila_free_unlocked') === '1'; } catch (e) { this._freeUnlocked = false; }
     this.initLeverageScene();
     this.initJourney();
     this.initBonus();
@@ -2393,6 +2447,30 @@ class Component extends DCLogic {
     };
     this._reduce ? requestAnimationFrame(go) : setTimeout(go, 320);
   }
+  freeVals() {
+    const C = window.AILA_CURRICULUM, { freeModalOpen, freeUnlocked, freeEmailValue, freeActiveIdx, freeNarrow } = this.state;
+    const unlocked = freeUnlocked || this._freeUnlocked;
+    let items = [];
+    if (C) { C.parts.forEach(p => p.modules.forEach(m => m.lessons.forEach(l => { if (l.preview && l.video) items.push({ t: l.t, d: l.d, video: l.video }); }))); }
+    const freeLessons = items.map((it, i) => ({
+      title: it.t, duration: it.d,
+      bg: i === freeActiveIdx ? 'rgba(184,255,61,0.08)' : 'transparent',
+      icon: i === freeActiveIdx ? 'play' : 'play-circle',
+      iconBg: i === freeActiveIdx ? '#B8FF3D' : 'rgba(255,255,255,0.08)',
+      iconColor: i === freeActiveIdx ? '#0B0D0F' : '#fff',
+      select: () => this.setState({ freeActiveIdx: i })
+    }));
+    const active = items[freeActiveIdx] || items[0] || { video: '', t: '' };
+    return {
+      freeModalOpen, freeUnlocked: unlocked, freeLocked: !unlocked, freeEmailValue,
+      freeModalCols: freeNarrow ? 'minmax(0,1fr)' : '240px minmax(0,1fr)',
+      freeLessons, freeActiveVideo: active.video, freeActiveTitle: active.t,
+      openFreeModal: () => this.setState({ freeModalOpen: true }),
+      closeFreeModal: () => this.setState({ freeModalOpen: false }),
+      onFreeEmailChange: (e) => this.setState({ freeEmailValue: e.target.value }),
+      submitFreeEmail: (e) => { e.preventDefault(); if (!this.state.freeEmailValue) return; try { localStorage.setItem('aila_free_unlocked', '1'); } catch (err) {} this._freeUnlocked = true; this.setState({ freeUnlocked: true }); fetch('https://hook.us1.make.com/iljyxer9ed70o3qa3eosfd3g32sco0tr', { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: this.state.freeEmailValue, timestamp: new Date().toISOString() }) }).catch(() => {}); }
+    };
+  }
   curVals() {
     const C = window.AILA_CURRICULUM, { curOpen, curNarrow, curDesc } = this.state;
     const base = { curCols: curNarrow ? 'minmax(0,1fr)' : '240px minmax(0,1fr)', curWide: !curNarrow, curNarrow,
@@ -2533,6 +2611,7 @@ class Component extends DCLogic {
       isOwner: persona === 'owner',
       showSticky: this.state.showSticky,
       scrollToOffer: (e) => { e.preventDefault(); const el = document.getElementById('offer-checkout-btn'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 200, behavior: 'smooth' }); },
+      ...this.freeVals(),
       floatingVideo: this.state.floatingVideo, floatingTitle: this.state.floatingTitle, floatingMaxed: this.state.floatingMaxed,
       floatingVideoMin: !!this.state.floatingVideo && !this.state.floatingMaxed,
       floatingVideoMax: !!this.state.floatingVideo && !!this.state.floatingMaxed,

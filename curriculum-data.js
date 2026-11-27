@@ -460,6 +460,41 @@ window.AILA_CURRICULUM = {
        "d": "09:34"
       }
      ]
+    },
+    {
+     "n": "11",
+     "id": "m11",
+     "title": "Research Mode en Claude AI: Investigaciones Profesionales con Claude",
+     "short": "Research Mode en Claude AI",
+     "icon": "search",
+     "result": "Domina el Modo Investigación y Pensamiento Adaptativo para hacer investigaciones profesionales con Claude AI.",
+     "declared": "40 min",
+     "lessons": [
+      {
+       "t": "Introducción a la sección",
+       "d": "01:00"
+      },
+      {
+       "t": "Qué es el Modo Investigación y Pensamiento Adaptativo en Claude AI",
+       "d": "06:00"
+      },
+      {
+       "t": "Prompt Engineering para Research Mode en Claude AI",
+       "d": "07:00"
+      },
+      {
+       "t": "Pre-Research Chat con Claude AI",
+       "d": "13:00"
+      },
+      {
+       "t": "Matrices comparativas con Research y Claude AI",
+       "d": "05:00"
+      },
+      {
+       "t": "Tu primera investigación profesional con Claude AI",
+       "d": "08:00"
+      }
+     ]
     }
    ]
   }
